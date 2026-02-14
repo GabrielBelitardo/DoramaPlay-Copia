@@ -507,7 +507,7 @@ export default function DoramaPass() {
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
-                  <span className="text-5xl font-bold text-white">R$10,00</span>
+                  <span className="text-5xl font-bold text-white">R$9,99</span>
                   <span className="text-gray-400 ml-2">/ mês</span>
                 </div>
               </div>
