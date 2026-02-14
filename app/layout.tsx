@@ -14,7 +14,7 @@ const dancingScript = Dancing_Script({
 })
 
 export const metadata: Metadata = {
-  title: "DoramaFLIX - Assista Milhares de Doramas e Séries",
+  title: "DoramaPlay Online - Assista Milhares de Doramas e Séries",
   description:
     "Acesso ilimitado ao maior catálogo de doramas asiáticos, séries coreanas, chinesas, japonesas e tailandesas em alta qualidade.",
   generator: "v0.app",
