@@ -507,7 +507,7 @@ export default function DoramaPass() {
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
-                  <span className="text-5xl font-bold text-white">R$9,99</span>
+                  <span className="text-5xl font-bold text-white">R$12,90</span>
                   <span className="text-gray-400 ml-2">/ mês</span>
                 </div>
               </div>
@@ -595,12 +595,20 @@ export default function DoramaPass() {
                 </div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Vitalício</h3>
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano 3 Meses</h3>
+
+              <div className="mb-6 flex justify-center">
+                <img 
+                  src="/doramas-promo.jpg" 
+                  alt="Doramas e Mini Séries" 
+                  className="w-64 h-64 object-cover rounded-xl shadow-lg"
+                />
+              </div>
 
               <div className="mb-6 text-center">
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-white">R$ 19,90</span>
-                  <span className="text-gray-400 ml-2">/ preço único</span>
+                  <span className="text-5xl font-bold text-white">R$ 24,90</span>
+                  <span className="text-gray-400 ml-2">/ 3 meses</span>
                 </div>
                 <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
                   Economize 83%
