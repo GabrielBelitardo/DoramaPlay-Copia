@@ -188,7 +188,7 @@ export default function DoramaPass() {
           </div>
           <div>
             <p className="font-semibold text-sm">{currentBuyer}</p>
-            <p className="text-xs opacity-90">acabou de comprar o DoramaPlay</p>
+            <p className="text-xs opacity-90">acabou de comprar o DoramaPlay Online</p>
           </div>
         </div>
       </div>
@@ -976,7 +976,7 @@ export default function DoramaPass() {
             </div>
 
             {/* Copyright */}
-            <p className="text-gray-400 text-center">© 2025 Dorama Passaport. Todos os direitos reservados.</p>
+            <p className="text-gray-400 text-center">© 2025 DoramaPlay Online. Todos os direitos reservados.</p>
 
             {/* Links */}
             <div className="flex gap-8 text-gray-300">
