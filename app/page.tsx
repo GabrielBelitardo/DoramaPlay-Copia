@@ -599,7 +599,7 @@ export default function DoramaPass() {
 
               <div className="mb-6 text-center">
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-white">R$ 17,90</span>
+                  <span className="text-5xl font-bold text-white">R$ 19,90</span>
                   <span className="text-gray-400 ml-2">/ preço único</span>
                 </div>
                 <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
