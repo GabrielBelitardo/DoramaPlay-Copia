@@ -581,7 +581,7 @@ export default function DoramaPass() {
               </div>
 
               <a
-                href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
+                href="https://doramapremium.mycartpanda.com/checkout/205314747:1?subscription=3989"
                 className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] text-center uppercase"
               >
                 ASSINAR AGORA
@@ -706,7 +706,7 @@ export default function DoramaPass() {
               </div>
 
               <a
-                href="https://doramapremium.mycartpanda.com/checkout/205314748:1"
+                href="https://doramapremium.mycartpanda.com/checkout/205314748:1?subscription=3990"
                 className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] text-center uppercase"
               >
                 ASSINAR PLANO VITALÍCIO
