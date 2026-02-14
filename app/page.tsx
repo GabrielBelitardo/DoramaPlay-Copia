@@ -503,12 +503,11 @@ export default function DoramaPass() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
-              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Mensal</h3>
+              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
                   <span className="text-5xl font-bold text-white">R$12,90</span>
-                  <span className="text-gray-400 ml-2">/ mês</span>
                 </div>
               </div>
 
@@ -581,7 +580,7 @@ export default function DoramaPass() {
               </div>
 
               <a
-                href="https://doramapremium.mycartpanda.com/checkout/205314747:1?subscription=3989"
+                href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
                 className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] text-center uppercase"
               >
                 ASSINAR AGORA
@@ -595,7 +594,7 @@ export default function DoramaPass() {
                 </div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano 3 Meses</h3>
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
 
               <div className="mb-6 flex justify-center">
                 <img 
@@ -608,7 +607,6 @@ export default function DoramaPass() {
               <div className="mb-6 text-center">
                 <div className="mb-3">
                   <span className="text-5xl font-bold text-white">R$ 24,90</span>
-                  <span className="text-gray-400 ml-2">/ 3 meses</span>
                 </div>
                 <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
                   Economize 83%
@@ -706,7 +704,7 @@ export default function DoramaPass() {
               </div>
 
               <a
-                href="https://doramapremium.mycartpanda.com/checkout/205314748:1?subscription=3990"
+                href="https://doramapremium.mycartpanda.com/checkout/205314748:1"
                 className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] text-center uppercase"
               >
                 ASSINAR PLANO VITALÍCIO

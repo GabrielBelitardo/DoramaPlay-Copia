@@ -91,7 +91,7 @@ export default function OfertaPage() {
             <div className="text-center mb-8">
               <div className="text-gray-400 line-through text-xl mb-2">de R$27,00</div>
               <div className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 bg-clip-text text-transparent mb-2">
-                R$12,90
+                R$17,90
               </div>
               <div className="text-xl text-white font-semibold">Pagamento Único</div>
             </div>
