@@ -191,3 +191,33 @@
 .animate-fade-in {
   animation: fade-in 0.7s ease-out;
 }
+
+/* Pulsing CTA button animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 0, 200, 0.4), 0 0 30px rgba(255, 0, 200, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 0, 200, 0.6), 0 0 50px rgba(255, 0, 200, 0.3);
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Testimonial image carousel */
+@keyframes testimonial-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-testimonial-scroll {
+  animation: testimonial-scroll 25s linear infinite;
+}
