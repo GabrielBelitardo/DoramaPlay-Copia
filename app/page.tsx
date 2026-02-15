@@ -625,7 +625,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Todos os benefícios do Mensal</span>
+                  <span className="text-white">Todos os benefícios do Basico</span>
                 </div>
 
                 <div className="flex items-start gap-3">
