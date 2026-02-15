@@ -312,7 +312,7 @@ export default function DoramaPass() {
           <div className="flex justify-center mt-8">
             <button
               onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-[#00ff00] hover:bg-[#00dd00] text-black font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,0,0.6)] text-center uppercase"
+              className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
             >
               GARANTIR ACESSO
             </button>
@@ -320,7 +320,88 @@ export default function DoramaPass() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Carousel Section - +1000 doramas */}
+      <section className="py-20 px-4 bg-[#0f0a1f] overflow-hidden relative">
+        <div className="container mx-auto max-w-6xl px-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight">
+            <span className="text-white">+1000 </span>
+            <span className="text-pink-400">doramas e minisséries</span>
+            <span className="text-white"> dubladas</span>
+          </h2>
+
+          <div className="mb-8 group">
+            <div className="flex gap-4 animate-scroll-right group-hover:pause-animation">
+              {[...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
+                <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src={poster || "/placeholder.svg"}
+                    alt={`Drama ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="group">
+            <div className="flex gap-4 animate-scroll-left group-hover:pause-animation">
+              {[...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
+                <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src={poster || "/placeholder.svg"}
+                    alt={`Drama ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Platforms Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight">
+            <span className="text-white">Todos os </span>
+            <span className="text-pink-400">doramas</span>
+            <span className="text-white"> dessas plataformas em um só Aplicativo.</span>
+          </h2>
+
+          <div className="flex justify-center items-center gap-6 mt-12 flex-wrap">
+            <div className="w-20 h-20 rounded-lg overflow-hidden">
+              <img src="/images/image-20-283-29.png" alt="Kocowa+" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="w-20 h-20 rounded-lg overflow-hidden">
+              <img src="/images/image-20-282-29.png" alt="Viki Rakuten" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="w-20 h-20 rounded-lg overflow-hidden">
+              <img src="/images/image-20-281-29.png" alt="iQIYI" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="w-20 h-20 rounded-lg overflow-hidden bg-black flex items-center justify-center">
+              <img src="/images/image.png" alt="Netflix" className="w-full h-full object-contain" />
+            </div>
+
+            <div className="w-20 h-20 rounded-lg overflow-hidden">
+              <img src="/images/image.jpeg" alt="Prime Video" className="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+              className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
+            >
+              GARANTIR ACESSO
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section - O que voce vai receber */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#0f0a1f] to-[#1a1432]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">O que você vai receber?</h2>
@@ -375,120 +456,42 @@ export default function DoramaPass() {
         </div>
       </section>
 
-      {/* Platforms Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight">
-            <span className="text-white">Todos os </span>
-            <span className="text-pink-400">doramas</span>
-            <span className="text-white"> dessas plataformas em um só Aplicativo.</span>
-          </h2>
-
-          <div className="flex justify-center items-center gap-6 mt-12 flex-wrap">
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image-20-283-29.png" alt="Kocowa+" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image-20-282-29.png" alt="Viki Rakuten" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image-20-281-29.png" alt="iQIYI" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden bg-black flex items-center justify-center">
-              <img src="/images/image.png" alt="Netflix" className="w-full h-full object-contain" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image.jpeg" alt="Prime Video" className="w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-[#00ff00] hover:bg-[#00dd00] text-black font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,0,0.6)] text-center uppercase"
-            >
-              GARANTIR ACESSO
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Carousel Section */}
-      <section className="py-20 px-4 bg-[#0f0a1f] overflow-hidden relative">
-        <div className="container mx-auto max-w-6xl px-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight">
-            <span className="text-white">+1000 </span>
-            <span className="text-pink-400">doramas e minisséries</span>
-            <span className="text-white"> dubladas</span>
-          </h2>
-
-          <div className="mb-8 group">
-            <div className="flex gap-4 animate-scroll-right group-hover:pause-animation">
-              {[...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
-                <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
-                  <img
-                    src={poster || "/placeholder.svg"}
-                    alt={`Drama ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="group">
-            <div className="flex gap-4 animate-scroll-left group-hover:pause-animation">
-              {[...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
-                <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
-                  <img
-                    src={poster || "/placeholder.svg"}
-                    alt={`Drama ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1432] to-[#0f0a1f]">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1432] to-[#0f0a1f] overflow-hidden">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">O que nossas clientes estão dizendo</h2>
 
-          <div className="grid md:grid-cols-3 gap-6 px-4">
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
-              <img
-                src="/images/new-testimonial-1.jpg"
-                alt="Depoimento cliente 1"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
-              <img
-                src="/images/new-testimonial-2.jpg"
-                alt="Depoimento cliente 2"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
-              <img
-                src="/images/new-testimonial-3.jpg"
-                alt="Depoimento cliente 3"
-                className="w-full h-auto object-cover"
-              />
+          <div className="overflow-hidden">
+            <div className="flex gap-6 animate-testimonial-scroll">
+              {[
+                "/testimonial-1.jpg",
+                "/testimonial-2.jpg",
+                "/testimonial-3.jpg",
+                "/testimonial-4.jpg",
+                "/testimonial-5.jpg",
+                "/testimonial-6.jpg",
+                "/testimonial-1.jpg",
+                "/testimonial-2.jpg",
+                "/testimonial-3.jpg",
+                "/testimonial-4.jpg",
+                "/testimonial-5.jpg",
+                "/testimonial-6.jpg",
+              ].map((src, index) => (
+                <div key={index} className="flex-shrink-0 w-72 md:w-80 rounded-2xl overflow-hidden shadow-xl">
+                  <img
+                    src={src}
+                    alt={`Depoimento cliente ${(index % 6) + 1}`}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="flex justify-center mt-12">
             <button
               onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-[#00ff00] hover:bg-[#00dd00] text-black font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,0,0.6)] text-center uppercase"
+              className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
             >
               GARANTIR ACESSO
             </button>
@@ -962,7 +965,7 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-md">
           <button
             onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-            className="block w-full bg-[#00ff00] hover:bg-[#00dd00] text-black font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,0,0.6)] text-center uppercase"
+            className="block w-full bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
           >
             GARANTIR ACESSO
           </button>
