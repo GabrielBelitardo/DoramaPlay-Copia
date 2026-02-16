@@ -189,124 +189,11 @@ export default function DoramaPass() {
           <div>
             <p className="font-semibold text-sm">{currentBuyer}</p>
             <p className="text-xs opacity-90">acabou de comprar o DoramaPlay Online</p>
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-gray-800/50 bg-[#1a1432]/70 backdrop-blur-md">
-        <div className="container mx-auto px-4 py-3 md:py-4">
-          <nav className="flex items-center justify-between">
-            {/* Mobile Navigation - Visible on mobile, hidden on desktop */}
-            <div className="flex lg:hidden items-center gap-2 text-xs flex-1">
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Planos
-              </a>
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Doramas
-              </a>
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                FAQ
-              </a>
-            </div>
-
-            {/* Desktop Navigation - Hidden on mobile */}
-            <div className="hidden lg:flex items-center gap-8 text-sm">
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Nossos Doramas
-              </a>
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Assista na TV
-              </a>
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Depoimentos
-              </a>
-            </div>
-
-            <div className="flex-1 lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 flex justify-center">
-              <div className="text-center leading-none">
-                <div
-                  className="text-3xl md:text-5xl font-bold text-white tracking-tight"
-                  style={{
-                    fontFamily: "var(--font-dancing-script)",
-                    textShadow: "0 0 20px rgba(167, 139, 250, 0.5), 0 0 40px rgba(167, 139, 250, 0.2)",
-                  }}
-                >
-                  Dorama
-                  <span
-                    className="text-[#00ff88] ml-1"
-                    style={{
-                      textShadow: "0 0 20px rgba(0, 255, 136, 0.6), 0 0 40px rgba(0, 255, 136, 0.3)",
-                    }}
-                  >
-                    Play
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Desktop Navigation Right - Hidden on mobile */}
-            <div className="hidden lg:flex items-center gap-8 text-sm">
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Planos
-              </a>
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                Garantia
-              </a>
-              <a href="/oferta" className="text-gray-300 hover:text-white transition-colors">
-                FAQ
-              </a>
-            </div>
-
-            <div className="flex-1 lg:hidden"></div>
-          </nav>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="pt-16 pb-24 px-4 relative">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ backgroundImage: "url('/images/hero-background.jpg')" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0f0a1f]/80 via-[#0f0a1f]/60 to-[#0f0a1f]" />
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 leading-tight">
-            <span className="text-white">Acesso Vitalício a +1000 Doramas</span>
-          </h1>
-
-          <p className="text-center text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-            Dublados ou legendados. Assista direto no seu celular. Sem propagandas.
-          </p>
-
-          <div className="relative max-w-sm mx-auto mb-16">
-            <div className="relative bg-gradient-to-br from-pink-500 via-pink-600 to-pink-700 rounded-[3rem] p-1 shadow-2xl shadow-pink-500/30">
-              <div className="bg-[#1c1233] rounded-[2.8rem] overflow-hidden">
-                <div className="relative aspect-[9/19.5]">
-                  <video
-                    id="dorama-video"
-                    className="w-full h-full object-cover rounded-[2.7rem]"
-                    loop
-                    playsInline
-                    controls
-                    poster="/images/captura-20de-20tela-20-2890-29.png"
-                  >
-                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/video%20doroma%20site-ywbKVeyPNrWIZ0WwBhoQnRuu7Gw6zm.mp4" type="video/mp4" />
-                  </video>
-
-                  {!isPlaying && (
-                    <button
-                      onClick={handlePlayVideo}
-                      className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-[2.7rem] cursor-pointer group"
-                    >
-                      <div className="w-20 h-20 bg-pink-500 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                        <Play className="w-10 h-10 text-white ml-1" fill="white" />
-                      </div>
-                    </button>
-                  )}
-                </div>
-              </div>
-            </div>
+          <div className="text-center text-gray-300 text-sm mb-8">
+            Dublados ou legendados
           </div>
 
           <div className="flex justify-center mt-8">
@@ -406,39 +293,23 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">O que você vai receber?</h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Combined Feature: Assista + Baixe */}
             <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer">
-              <div className="mb-6">
-                <div className="flex justify-center gap-3">
-                  <div className="w-14 h-14 bg-pink-600/20 rounded-xl flex items-center justify-center border border-pink-500/30">
-                    <Monitor className="w-7 h-7 text-pink-400" />
-                  </div>
-                  <div className="w-14 h-14 bg-pink-600/20 rounded-xl flex items-center justify-center border border-pink-500/30">
-                    <Smartphone className="w-7 h-7 text-pink-400" />
-                  </div>
-                  <div className="w-14 h-14 bg-pink-600/20 rounded-xl flex items-center justify-center border border-pink-500/30">
-                    <Tablet className="w-7 h-7 text-pink-400" />
-                  </div>
-                </div>
+              <div className="mb-8">
+                <img src="/streaming-apps.jpeg" alt="Apps de Streaming" className="w-full h-auto rounded-xl shadow-lg" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Assista onde quiser!</h3>
-              <p className="text-gray-400 leading-relaxed text-sm">
-                Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. A
-                diversão não tem limites!
+              <h3 className="text-2xl font-bold mb-4">Assista Onde Quiser + Baixe Offline</h3>
+              <p className="text-gray-400 leading-relaxed text-sm mb-4">
+                Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet. A diversão não tem limites!
               </p>
+              <div className="flex justify-center">
+                <img src="/phone-dublado-legendado.png" alt="Phone Mockup" className="w-48 h-auto rounded-lg shadow-lg" />
+              </div>
             </div>
 
-            <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer">
-              <div className="w-20 h-20 mx-auto mb-6 bg-pink-600/20 rounded-2xl flex items-center justify-center border border-pink-500/30">
-                <Download className="w-12 h-12 text-pink-400" />
-              </div>
-              <h3 className="text-2xl font-bold mb-4">Baixe doramas para assistir offline</h3>
-              <p className="text-gray-400 leading-relaxed text-sm">
-                Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet.
-              </p>
-            </div>
-
-            <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer">
+            {/* Pagamento Único Card */}
+            <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer flex flex-col justify-center">
               <div className="w-20 h-20 mx-auto mb-6 bg-pink-600/20 rounded-2xl flex items-center justify-center border border-pink-500/30">
                 <div className="relative">
                   <DollarSign className="w-12 h-12 text-pink-400" />
@@ -447,9 +318,9 @@ export default function DoramaPass() {
                   </div>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Pagamento único, sem mensalidades</h3>
+              <h3 className="text-2xl font-bold mb-4">Pagamento Único, Sem Mensalidades</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
-                Pague apenas uma vez e aproveite o acesso ilimitado a todos os doramas, sem surpresas de mensalidades.
+                Pague apenas uma vez e aproveite o acesso ilimitado a todos os doramas, sem surpresas de mensalidades. Acesso vitalício para maratonar sem limites!
               </p>
             </div>
           </div>
