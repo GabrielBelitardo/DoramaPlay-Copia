@@ -201,43 +201,29 @@ export default function DoramaPass() {
         </div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 leading-tight">
-                <span className="text-white">Acesso Vitálicio AGORA!</span>
-              </h1>
+          <div className="flex flex-col items-center justify-center text-center">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+              <span className="text-white">Acesso Vitálício AGORA!</span>
+            </h1>
 
-              <p className="text-center text-pink-300 text-lg mb-12 max-w-2xl mx-auto font-semibold">
-                Maratone Doramas Sem Limites, Sem Anúncios e Sem Mensalidades!
-              </p>
+            <p className="text-center text-pink-300 text-lg mb-12 max-w-2xl font-semibold">
+              Maratone Doramas Sem Limites, Sem Anúncios e Sem Mensalidades!
+            </p>
 
-              <div className="flex justify-center mb-8">
-                <div className="relative w-full max-w-xs">
-                  <video
-                    id="dorama-video"
-                    className="w-full rounded-3xl shadow-2xl border-2 border-pink-500/30"
-                    poster="/images/dorama-thumbnail.jpg"
-                    onPlay={() => setIsPlaying(true)}
-                    onEnded={() => setIsPlaying(false)}
-                  >
-                    <source src="/dorama-trailer.mp4" type="video/mp4" />
-                  </video>
-
-                  {!isPlaying && (
-                    <button
-                      onClick={handlePlayVideo}
-                      className="absolute inset-0 flex items-center justify-center hover:scale-110 transition-transform"
-                    >
-                      <div className="w-20 h-20 bg-pink-500 rounded-full flex items-center justify-center shadow-lg">
-                        <Play className="w-8 h-8 text-white ml-1" />
-                      </div>
+            <div className="flex justify-center mb-8">
+              <div className="relative w-full max-w-xs">
+                <video
+                  id="dorama-video"
+                  className="w-full rounded-3xl shadow-2xl border-2 border-pink-500/30"
+                  controls
+                >
+                  <source src="/hero-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
                     </button>
                   )}
                 </div>
-              </div>
-
-              <div className="text-center text-gray-300 text-sm mb-8">
-                Dublados ou legendados
               </div>
 
               <div className="flex justify-center mt-8">
@@ -346,23 +332,15 @@ export default function DoramaPass() {
                 <img src="/streaming-apps.jpeg" alt="Apps de Streaming" className="w-full h-auto rounded-xl shadow-lg" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Assista Onde Quiser + Baixe Offline</h3>
-              <p className="text-gray-400 leading-relaxed text-sm mb-4">
+              <p className="text-gray-400 leading-relaxed text-sm">
                 Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet. A diversão não tem limites!
               </p>
-              <div className="flex justify-center">
-                <img src="/phone-dublado-legendado.png" alt="Phone Mockup" className="w-48 h-auto rounded-lg shadow-lg" />
-              </div>
             </div>
 
             {/* Pagamento Único Card */}
             <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer flex flex-col justify-center">
-              <div className="w-20 h-20 mx-auto mb-6 bg-pink-600/20 rounded-2xl flex items-center justify-center border border-pink-500/30">
-                <div className="relative">
-                  <DollarSign className="w-12 h-12 text-pink-400" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 border-4 border-pink-400 rounded-full"></div>
-                  </div>
-                </div>
+              <div className="mb-8">
+                <img src="/phone-dublado-legendado.png" alt="Phone Mockup" className="w-full h-auto rounded-lg shadow-lg" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Pagamento Único, Sem Mensalidades</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
