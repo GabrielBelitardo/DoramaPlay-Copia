@@ -189,20 +189,66 @@ export default function DoramaPass() {
           <div>
             <p className="font-semibold text-sm">{currentBuyer}</p>
             <p className="text-xs opacity-90">acabou de comprar o DoramaPlay Online</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 leading-tight">
+                <span className="text-white">Acesso Vitálicio AGORA!</span>
+              </h1>
+
+              <p className="text-center text-pink-300 text-lg mb-12 max-w-2xl mx-auto font-semibold">
+                Maratone Doramas Sem Limites, Sem Anúncios e Sem Mensalidades!
+              </p>
+
+              <div className="flex justify-center mb-8">
+                <div className="relative w-full max-w-xs">
+                  <video
+                    id="dorama-video"
+                    className="w-full rounded-3xl shadow-2xl border-2 border-pink-500/30"
+                    poster="/images/dorama-thumbnail.jpg"
+                    onPlay={() => setIsPlaying(true)}
+                    onEnded={() => setIsPlaying(false)}
+                  >
+                    <source src="/dorama-trailer.mp4" type="video/mp4" />
+                  </video>
+
+                  {!isPlaying && (
+                    <button
+                      onClick={handlePlayVideo}
+                      className="absolute inset-0 flex items-center justify-center hover:scale-110 transition-transform"
+                    >
+                      <div className="w-20 h-20 bg-pink-500 rounded-full flex items-center justify-center shadow-lg">
+                        <Play className="w-8 h-8 text-white ml-1" />
+                      </div>
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <div className="text-center text-gray-300 text-sm mb-8">
+                Dublados ou legendados
+              </div>
+
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+                  className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
+                >
+                  GARANTIR ACESSO
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div className="text-center text-gray-300 text-sm mb-8">
-            Dublados ou legendados
-          </div>
-
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
-            >
-              GARANTIR ACESSO
-            </button>
           </div>
         </div>
       </section>
