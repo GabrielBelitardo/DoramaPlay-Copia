@@ -224,12 +224,12 @@
 
 @media (max-width: 768px) {
   .animate-scroll-right {
-    animation: scroll-right 12s linear infinite;
+    animation: scroll-right 8s linear infinite;
   }
   .animate-scroll-left {
-    animation: scroll-left 12s linear infinite;
+    animation: scroll-left 8s linear infinite;
   }
   .animate-testimonial-scroll {
-    animation: testimonial-scroll 10s linear infinite;
+    animation: testimonial-scroll 7s linear infinite;
   }
 }

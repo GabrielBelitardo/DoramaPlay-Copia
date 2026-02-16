@@ -264,6 +264,8 @@ export default function DoramaPass() {
                   onEnded={() => setIsPlaying(false)}
                   controls={isPlaying}
                   poster="/doramas-promo.jpg"
+                  preload="metadata"
+                  playsInline
                 >
                   <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
@@ -366,7 +368,7 @@ export default function DoramaPass() {
           <div className="flex justify-center mt-8">
             <button
               onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
+              className="block w-full max-w-md bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
             >
               GARANTIR ACESSO
             </button>
@@ -541,7 +543,7 @@ export default function DoramaPass() {
                 href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
                 className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
               >
-                GARANTIR ACESSO
+                ASSINAR AGORA
               </a>
             </div>
 
@@ -665,7 +667,7 @@ export default function DoramaPass() {
                 href="https://doramapremium.mycartpanda.com/checkout/205314748:1"
                 className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
               >
-                GARANTIR ACESSO
+                ASSINAR PLANO VITALÍCIO
               </a>
             </div>
           </div>
