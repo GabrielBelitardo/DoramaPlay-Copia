@@ -8,6 +8,7 @@ export default function DoramaPass() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const [showNotification, setShowNotification] = useState(false)
   const [currentBuyer, setCurrentBuyer] = useState("")
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const handlePlayVideo = () => {
     const video = document.getElementById("dorama-video") as HTMLVideoElement
