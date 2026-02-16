@@ -159,25 +159,28 @@ export default function DoramaPass() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a0b2e] via-[#2d1b4e] to-[#1a0b2e]">
-      {/* Fixed Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95 backdrop-blur-md border-b border-pink-500/20">
-        <div className="container mx-auto px-4 py-4">
+      {/* Fixed Header */}
+      <header className="border-b border-white/10 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95">
+        <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-pink-500">DoramaPlay Online</div>
-            <div className="hidden md:flex items-center gap-6">
-              <a href="#pricing" className="text-white hover:text-pink-400 transition-colors">Planos</a>
-              <a href="#features" className="text-white hover:text-pink-400 transition-colors">Recursos</a>
-              <a href="#faq" className="text-white hover:text-pink-400 transition-colors">FAQ</a>
+            <a href="/" className="text-xl md:text-2xl font-bold text-pink-500">DoramaPlay Online</a>
+            <div className="flex items-center gap-4 md:gap-6">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg font-semibold transition-all"
+                className="text-white hover:text-pink-400 transition-colors text-sm md:text-base font-medium"
               >
-                Assinar Agora
+                Planos
               </button>
+              <a
+                href="/oferta"
+                className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 md:px-6 py-2 rounded-full text-sm md:text-base font-bold hover:from-pink-600 hover:to-pink-700 transition-all shadow-lg shadow-pink-500/30"
+              >
+                Oferta Especial
+              </a>
             </div>
           </div>
         </div>
-      </nav>
+      </header>
 
       <div
         className={`fixed bottom-6 left-6 z-50 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-4 rounded-lg shadow-2xl transform transition-all duration-500 ${
@@ -215,15 +218,27 @@ export default function DoramaPass() {
             </p>
 
             <div className="flex justify-center mb-12 w-full">
-              <div className="relative w-full max-w-4xl">
+              <div className="relative w-full max-w-lg md:max-w-xl lg:max-w-2xl aspect-square">
                 <video
                   id="dorama-video"
-                  className="w-full rounded-3xl shadow-2xl border-4 border-pink-500/30"
-                  controls
-                  poster="/images/dorama-thumbnail.jpg"
+                  className="w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-pink-500/30"
+                  onPlay={() => setIsPlaying(true)}
+                  onEnded={() => setIsPlaying(false)}
+                  controls={isPlaying}
                 >
                   <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
+
+                {!isPlaying && (
+                  <button
+                    onClick={handlePlayVideo}
+                    className="absolute inset-0 flex items-center justify-center hover:scale-110 transition-transform rounded-3xl bg-black/20"
+                  >
+                    <div className="w-24 h-24 md:w-28 md:h-28 bg-pink-500 rounded-full flex items-center justify-center shadow-2xl shadow-pink-500/50">
+                      <Play className="w-10 h-10 md:w-12 md:h-12 text-white ml-1" />
+                    </div>
+                  </button>
+                )}
               </div>
             </div>
 
