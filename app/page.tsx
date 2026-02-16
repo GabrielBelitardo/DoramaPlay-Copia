@@ -175,8 +175,8 @@ export default function DoramaPass() {
             </button>
 
             {/* Logo - Centered on all screens */}
-            <a href="/" className="text-xl md:text-2xl font-bold text-pink-500 absolute md:static left-1/2 md:left-auto transform -translate-x-1/2 md:transform-none">
-              DoramaPlay
+            <a href="/" className="text-xl md:text-2xl font-bold absolute md:static left-1/2 md:left-auto transform -translate-x-1/2 md:transform-none">
+              <span className="text-pink-500">Dorama</span><span className="text-white">Play</span>
             </a>
 
             {/* Desktop Menu */}
@@ -413,7 +413,6 @@ export default function DoramaPass() {
           <div className="overflow-hidden">
             <div className="flex gap-6 animate-testimonial-scroll">
               {[
-                "/depoimento-1.png",
                 "/depoimento-2.png",
                 "/depoimento-3.png",
                 "/depoimento-4.png",
@@ -423,7 +422,6 @@ export default function DoramaPass() {
                 "/depoimento-8.png",
                 "/depoimento-9.png",
                 "/depoimento-10.png",
-                "/depoimento-1.png",
                 "/depoimento-2.png",
                 "/depoimento-3.png",
                 "/depoimento-4.png",
@@ -448,7 +446,7 @@ export default function DoramaPass() {
           <div className="flex justify-center mt-12">
             <button
               onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
+              className="block w-full max-w-md bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-lg shadow-pink-500/30"
             >
               GARANTIR ACESSO
             </button>
@@ -541,9 +539,9 @@ export default function DoramaPass() {
 
               <a
                 href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
-                className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] text-center uppercase"
+                className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
               >
-                ASSINAR AGORA
+                GARANTIR ACESSO
               </a>
             </div>
 
@@ -665,9 +663,9 @@ export default function DoramaPass() {
 
               <a
                 href="https://doramapremium.mycartpanda.com/checkout/205314748:1"
-                className="block w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.6)] text-center uppercase"
+                className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
               >
-                ASSINAR PLANO VITALÍCIO
+                GARANTIR ACESSO
               </a>
             </div>
           </div>
