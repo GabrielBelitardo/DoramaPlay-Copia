@@ -162,9 +162,9 @@ export default function DoramaPass() {
       {/* Fixed Header */}
       <header className="border-b border-white/10 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95">
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center relative">
             <a href="/" className="text-xl md:text-2xl font-bold text-pink-500">DoramaPlay Online</a>
-            <div className="flex items-center gap-4 md:gap-6">
+            <div className="absolute right-0 flex items-center gap-4 md:gap-6">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
                 className="text-white hover:text-pink-400 transition-colors text-sm md:text-base font-medium"
@@ -346,7 +346,7 @@ export default function DoramaPass() {
               <div className="mb-8">
                 <img src="/streaming-apps.jpeg" alt="Apps de Streaming" className="w-full h-auto rounded-xl shadow-lg" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Assista Onde Quiser + Baixe Offline</h3>
+              <h3 className="text-2xl font-bold mb-4">Tudo em um só lugar</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
                 Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet. A diversão não tem limites!
               </p>
