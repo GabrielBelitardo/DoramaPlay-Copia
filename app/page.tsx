@@ -162,7 +162,7 @@ export default function DoramaPass() {
     <div className="min-h-screen bg-gradient-to-b from-[#1a0b2e] via-[#2d1b4e] to-[#1a0b2e]">
       {/* Fixed Header */}
       <header className="border-b border-white/10 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95">
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between md:justify-center relative">
             {/* Mobile Menu Button */}
             <button
@@ -239,7 +239,7 @@ export default function DoramaPass() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center py-32 px-4 overflow-hidden mt-16">
+      <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden pt-20">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
@@ -263,6 +263,7 @@ export default function DoramaPass() {
                   onPlay={() => setIsPlaying(true)}
                   onEnded={() => setIsPlaying(false)}
                   controls={isPlaying}
+                  poster="/doramas-promo.jpg"
                 >
                   <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
@@ -283,7 +284,7 @@ export default function DoramaPass() {
             <div className="flex justify-center mt-8 w-full">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                className="w-full max-w-2xl bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-2xl"
+                className="w-full max-w-2xl bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-2xl"
               >
                 GARANTIR ACESSO AGORA
               </button>
@@ -303,11 +304,11 @@ export default function DoramaPass() {
 
           <div className="mb-8 group">
             <div className="flex gap-4 animate-scroll-right group-hover:pause-animation">
-              {[...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
+              {[...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={poster || "/placeholder.svg"}
-                    alt={`Drama ${index + 1}`}
+                    alt={`Drama ${(index % dramaPostersRow1.length) + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -317,11 +318,11 @@ export default function DoramaPass() {
 
           <div className="group">
             <div className="flex gap-4 animate-scroll-left group-hover:pause-animation">
-              {[...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
+              {[...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={poster || "/placeholder.svg"}
-                    alt={`Drama ${index + 1}`}
+                    alt={`Drama ${(index % dramaPostersRow2.length) + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
