@@ -223,13 +223,12 @@ export default function DoramaPass() {
             </div>
 
             <div className="flex justify-center mt-8">
-                <button
-                  onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                  className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
-                >
-                  GARANTIR ACESSO
-                </button>
-              </div>
+              <button
+                onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+                className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
+              >
+                GARANTIR ACESSO
+              </button>
             </div>
           </div>
         </div>
