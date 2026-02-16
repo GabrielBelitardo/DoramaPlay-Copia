@@ -132,49 +132,53 @@ export default function DoramaPass() {
   }
 
   const dramaPostersRow1 = [
-    "/images/image-20-2828-29.png",
-    "/images/image-13.png",
-    "/images/image-5.png",
-    "/images/image-14.png",
-    "/images/image-4.png",
-    "/images/image-7.png",
-    "/images/image-15.png",
-    "/images/image-8.png",
-    "/images/image-6.png",
-    "/images/image-20-2827-29.png",
-    "/images/image-20-2816-29.png",
-    "/images/image-20-2815-29.png",
-    "/images/image-20-2826-29.png",
-    "/images/image-20-2823-29.png",
-    "/images/image-20-2824-29.png",
-    "/images/image-20-2825-29.png",
-    "/images/image-20-2822-29.png",
-    "/images/image-20-2817-29.png",
+    "/drama-1.png",
+    "/drama-2.webp",
+    "/drama-3.webp",
+    "/drama-4.webp",
+    "/drama-5.webp",
+    "/drama-6.webp",
+    "/drama-7.webp",
+    "/drama-8.webp",
+    "/drama-9.jpeg",
+    "/drama-10.jpeg",
   ]
 
   const dramaPostersRow2 = [
-    "/images/image-20-2817-29.png",
-    "/images/image-6.png",
-    "/images/image-8.png",
-    "/images/image-15.png",
-    "/images/image-7.png",
-    "/images/image-4.png",
-    "/images/image-14.png",
-    "/images/image-5.png",
-    "/images/image-13.png",
-    "/images/image-20-2822-29.png",
-    "/images/image-20-2825-29.png",
-    "/images/image-20-2824-29.png",
-    "/images/image-20-2823-29.png",
-    "/images/image-20-2826-29.png",
-    "/images/image-20-2815-29.png",
-    "/images/image-20-2816-29.png",
-    "/images/image-20-2827-29.png",
-    "/images/image-20-2828-29.png",
+    "/drama-6.webp",
+    "/drama-7.webp",
+    "/drama-8.webp",
+    "/drama-9.jpeg",
+    "/drama-10.jpeg",
+    "/drama-1.png",
+    "/drama-2.webp",
+    "/drama-3.webp",
+    "/drama-4.webp",
+    "/drama-5.webp",
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#1a0b2e] via-[#2d1b4e] to-[#1a0b2e]">
+      {/* Fixed Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95 backdrop-blur-md border-b border-pink-500/20">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="text-2xl font-bold text-pink-500">DoramaPlay Online</div>
+            <div className="hidden md:flex items-center gap-6">
+              <a href="#pricing" className="text-white hover:text-pink-400 transition-colors">Planos</a>
+              <a href="#features" className="text-white hover:text-pink-400 transition-colors">Recursos</a>
+              <a href="#faq" className="text-white hover:text-pink-400 transition-colors">FAQ</a>
+              <button
+                onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+                className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg font-semibold transition-all"
+              >
+                Assinar Agora
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div
         className={`fixed bottom-6 left-6 z-50 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-4 rounded-lg shadow-2xl transform transition-all duration-500 ${
           showNotification ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
@@ -194,40 +198,41 @@ export default function DoramaPass() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center py-32 px-4 overflow-hidden mt-16">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-20 left-10 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto max-w-6xl relative z-10">
+        <div className="container mx-auto max-w-7xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
-              <span className="text-white">Acesso Vitálício AGORA!</span>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+              <span className="text-white">Acesso Vitálicio AGORA!</span>
             </h1>
 
-            <p className="text-center text-pink-300 text-lg mb-12 max-w-2xl font-semibold">
+            <p className="text-center text-pink-300 text-xl md:text-2xl lg:text-3xl mb-16 max-w-4xl font-semibold">
               Maratone Doramas Sem Limites, Sem Anúncios e Sem Mensalidades!
             </p>
 
-            <div className="flex justify-center mb-8">
-              <div className="relative w-full max-w-xs">
+            <div className="flex justify-center mb-12 w-full">
+              <div className="relative w-full max-w-4xl">
                 <video
                   id="dorama-video"
-                  className="w-full rounded-3xl shadow-2xl border-2 border-pink-500/30"
+                  className="w-full rounded-3xl shadow-2xl border-4 border-pink-500/30"
                   controls
+                  poster="/images/dorama-thumbnail.jpg"
                 >
                   <source src="/hero-video.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
 
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-8 w-full">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                className="block w-full max-w-md bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow"
+                className="w-full max-w-2xl bg-[#4a0e78] hover:bg-[#5a1a8a] text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-2xl"
               >
-                GARANTIR ACESSO
+                GARANTIR ACESSO AGORA
               </button>
             </div>
           </div>
