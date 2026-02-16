@@ -464,23 +464,31 @@ export default function DoramaPass() {
           <div className="overflow-hidden">
             <div className="flex gap-6 animate-testimonial-scroll">
               {[
-                "/testimonial-1.jpg",
-                "/testimonial-2.jpg",
-                "/testimonial-3.jpg",
-                "/testimonial-4.jpg",
-                "/testimonial-5.jpg",
-                "/testimonial-6.jpg",
-                "/testimonial-1.jpg",
-                "/testimonial-2.jpg",
-                "/testimonial-3.jpg",
-                "/testimonial-4.jpg",
-                "/testimonial-5.jpg",
-                "/testimonial-6.jpg",
+                "/depoimento-1.png",
+                "/depoimento-2.png",
+                "/depoimento-3.png",
+                "/depoimento-4.png",
+                "/depoimento-5.png",
+                "/depoimento-6.png",
+                "/depoimento-7.png",
+                "/depoimento-8.png",
+                "/depoimento-9.png",
+                "/depoimento-10.png",
+                "/depoimento-1.png",
+                "/depoimento-2.png",
+                "/depoimento-3.png",
+                "/depoimento-4.png",
+                "/depoimento-5.png",
+                "/depoimento-6.png",
+                "/depoimento-7.png",
+                "/depoimento-8.png",
+                "/depoimento-9.png",
+                "/depoimento-10.png",
               ].map((src, index) => (
                 <div key={index} className="flex-shrink-0 w-72 md:w-80 rounded-2xl overflow-hidden shadow-xl">
                   <img
                     src={src}
-                    alt={`Depoimento cliente ${(index % 6) + 1}`}
+                    alt={`Depoimento cliente ${(index % 10) + 1}`}
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -590,7 +598,7 @@ export default function DoramaPass() {
               </a>
             </div>
 
-            <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)] order-1 md:order-2">
+            <div className="bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)] order-1 md:order-2">
               <div className="absolute -top-4 -right-4">
                 <div className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/50 uppercase">
                   MELHOR OFERTA
@@ -625,7 +633,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Todos os benefícios do Mensal</span>
+                  <span className="text-white">Todos os benefícios do Básico</span>
                 </div>
 
                 <div className="flex items-start gap-3">
