@@ -162,9 +162,24 @@ export default function DoramaPass() {
       {/* Fixed Header */}
       <header className="border-b border-white/10 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95">
         <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-center relative">
-            <a href="/" className="text-xl md:text-2xl font-bold text-pink-500">DoramaPlay Online</a>
-            <div className="absolute right-0 flex items-center gap-4 md:gap-6">
+          <div className="flex items-center justify-between md:justify-center relative">
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden flex flex-col gap-1.5"
+            >
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
+            </button>
+
+            {/* Logo - Centered on all screens */}
+            <a href="/" className="text-xl md:text-2xl font-bold text-pink-500 absolute md:static left-1/2 md:left-auto transform -translate-x-1/2 md:transform-none">
+              DoramaPlay
+            </a>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:absolute md:right-0 md:flex items-center gap-4 md:gap-6">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
                 className="text-white hover:text-pink-400 transition-colors text-sm md:text-base font-medium"
@@ -179,6 +194,28 @@ export default function DoramaPass() {
               </a>
             </div>
           </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 flex flex-col gap-3">
+              <button
+                onClick={() => {
+                  document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
+                  setMobileMenuOpen(false)
+                }}
+                className="text-white hover:text-pink-400 transition-colors text-sm font-medium py-2"
+              >
+                Planos
+              </button>
+              <a
+                href="/oferta"
+                onClick={() => setMobileMenuOpen(false)}
+                className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:from-pink-600 hover:to-pink-700 transition-all shadow-lg shadow-pink-500/30 text-center"
+              >
+                Oferta Especial
+              </a>
+            </div>
+          )}
         </div>
       </header>
 
