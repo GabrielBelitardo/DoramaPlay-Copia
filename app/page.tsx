@@ -306,7 +306,7 @@ export default function DoramaPass() {
 
           <div className="mb-8 group">
             <div className="flex gap-4 animate-scroll-right group-hover:pause-animation">
-              {[...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
+              {[...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={poster || "/placeholder.svg"}
@@ -320,7 +320,7 @@ export default function DoramaPass() {
 
           <div className="group">
             <div className="flex gap-4 animate-scroll-left group-hover:pause-animation">
-              {[...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
+              {[...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={poster || "/placeholder.svg"}
@@ -433,11 +433,20 @@ export default function DoramaPass() {
                 "/depoimento-8.png",
                 "/depoimento-9.png",
                 "/depoimento-10.png",
+                "/depoimento-2.png",
+                "/depoimento-3.png",
+                "/depoimento-4.png",
+                "/depoimento-5.png",
+                "/depoimento-6.png",
+                "/depoimento-7.png",
+                "/depoimento-8.png",
+                "/depoimento-9.png",
+                "/depoimento-10.png",
               ].map((src, index) => (
                 <div key={index} className="flex-shrink-0 w-72 md:w-80 rounded-2xl overflow-hidden shadow-xl">
                   <img
                     src={src}
-                    alt={`Depoimento cliente ${(index % 10) + 1}`}
+                    alt={`Depoimento cliente ${(index % 9) + 2}`}
                     className="w-full h-auto object-cover"
                   />
                 </div>
