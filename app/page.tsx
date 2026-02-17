@@ -407,64 +407,6 @@ export default function DoramaPass() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1432] to-[#0f0a1f] overflow-hidden">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">O que nossas clientes estão dizendo</h2>
-
-          <div className="overflow-hidden">
-            <div className="flex gap-6 animate-testimonial-scroll">
-              {[
-                "/depoimento-2.png",
-                "/depoimento-3.png",
-                "/depoimento-4.png",
-                "/depoimento-5.png",
-                "/depoimento-6.png",
-                "/depoimento-7.png",
-                "/depoimento-8.png",
-                "/depoimento-9.png",
-                "/depoimento-10.png",
-                "/depoimento-2.png",
-                "/depoimento-3.png",
-                "/depoimento-4.png",
-                "/depoimento-5.png",
-                "/depoimento-6.png",
-                "/depoimento-7.png",
-                "/depoimento-8.png",
-                "/depoimento-9.png",
-                "/depoimento-10.png",
-                "/depoimento-2.png",
-                "/depoimento-3.png",
-                "/depoimento-4.png",
-                "/depoimento-5.png",
-                "/depoimento-6.png",
-                "/depoimento-7.png",
-                "/depoimento-8.png",
-                "/depoimento-9.png",
-                "/depoimento-10.png",
-              ].map((src, index) => (
-                <div key={index} className="flex-shrink-0 w-72 md:w-80 rounded-2xl overflow-hidden shadow-xl">
-                  <img
-                    src={src}
-                    alt={`Depoimento cliente ${(index % 9) + 2}`}
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="flex justify-center mt-12">
-            <button
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-lg shadow-pink-500/30"
-            >
-              GARANTIR ACESSO
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
