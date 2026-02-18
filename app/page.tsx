@@ -220,24 +220,6 @@ export default function DoramaPass() {
         </div>
       </header>
 
-      <div
-        className={`fixed bottom-6 left-6 z-50 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-4 rounded-lg shadow-2xl transform transition-all duration-500 ${
-          showNotification ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
-        }`}
-      >
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          </div>
-          <div>
-            <p className="font-semibold text-sm">{currentBuyer}</p>
-            <p className="text-xs opacity-90">acabou de comprar o DoramaPlay Online</p>
-          </div>
-        </div>
-      </div>
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center py-20 px-4 overflow-hidden pt-20">
         <div className="absolute inset-0 opacity-30">
@@ -372,11 +354,7 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-gradient-to-r from-pink-600/20 to-purple-600/20 rounded-3xl p-8 md:p-12 border-2 border-pink-500/30 text-center">
             <div className="flex justify-center mb-6">
-              <div className="w-24 h-24 bg-pink-500/20 rounded-full flex items-center justify-center border-2 border-pink-500">
-                <svg className="w-12 h-12 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
+              <img src="/garantia-7-dias.png" alt="Garantia 7 Dias" className="w-32 h-32 md:w-40 md:h-40" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Garantia de 7 Dias</h2>
             <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
@@ -421,96 +399,11 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Escolha o melhor plano para você</h2>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
-              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
-
-              <div className="mb-6 text-center">
-                <div className="mb-2">
-                  <span className="text-5xl font-bold text-white">R$12,90</span>
-                </div>
-              </div>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-white">Acesso completo ao catálogo</span>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-white">Qualidade HD e 4K</span>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-white">Sem anúncios</span>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-white">80% dos doramas dublados</span>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-white">Assista em qualquer dispositivo</span>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span className="text-white">Acesso durante o período ativo</span>
-                </div>
-              </div>
-
-              <a
-                href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
-                className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
-              >
-                ASSINAR AGORA
-              </a>
-            </div>
-
-            <div className="bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)] order-1 md:order-2">
+          <div className="flex justify-center max-w-2xl mx-auto">
+            <div className="w-full bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)]">
               <div className="absolute -top-4 -right-4">
                 <div className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/50 uppercase">
-                  MELHOR OFERTA
+                  OFERTA IMPERDÍVEL
                 </div>
               </div>
 
@@ -525,6 +418,9 @@ export default function DoramaPass() {
               </div>
 
               <div className="mb-6 text-center">
+                <div className="mb-2">
+                  <span className="text-3xl font-bold text-red-500 line-through">R$ 34,90</span>
+                </div>
                 <div className="mb-3">
                   <span className="text-5xl font-bold text-white">R$ 24,90</span>
                 </div>
