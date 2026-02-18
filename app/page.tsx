@@ -247,12 +247,12 @@ export default function DoramaPass() {
 
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-              <span className="text-white">Acesso Vitálicio AGORA!</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-4">
+              <span className="text-white">Tenha acesso completo ao DoramaPlay por apenas R$12,90</span>
             </h1>
 
             <p className="text-center text-pink-300 text-xl md:text-2xl lg:text-3xl mb-16 max-w-4xl font-semibold">
-              Maratone Doramas Sem Limites, Sem Anúncios e Sem Mensalidades!
+              Pagamento único de R$12,90
             </p>
 
             <div className="flex justify-center mb-12 w-full">
@@ -267,7 +267,7 @@ export default function DoramaPass() {
                   preload="metadata"
                   playsInline
                 >
-                  <source src="/hero-video.mp4" type="video/mp4" />
+                  <source src="/hero-video-new.mp4" type="video/mp4" />
                 </video>
 
                 {!isPlaying && (
@@ -334,47 +334,7 @@ export default function DoramaPass() {
         </div>
       </section>
 
-      {/* Platforms Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 leading-tight">
-            <span className="text-white">Todos os </span>
-            <span className="text-pink-400">doramas</span>
-            <span className="text-white"> dessas plataformas em um só Aplicativo.</span>
-          </h2>
 
-          <div className="flex justify-center items-center gap-6 mt-12 flex-wrap">
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image-20-283-29.png" alt="Kocowa+" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image-20-282-29.png" alt="Viki Rakuten" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image-20-281-29.png" alt="iQIYI" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden bg-black flex items-center justify-center">
-              <img src="/images/image.png" alt="Netflix" className="w-full h-full object-contain" />
-            </div>
-
-            <div className="w-20 h-20 rounded-lg overflow-hidden">
-              <img src="/images/image.jpeg" alt="Prime Video" className="w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-              className="block w-full max-w-md bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
-            >
-              GARANTIR ACESSO
-            </button>
-          </div>
-        </div>
-      </section>
 
       {/* Features Section - O que voce vai receber */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#0f0a1f] to-[#1a1432]">
@@ -403,6 +363,55 @@ export default function DoramaPass() {
                 Pague apenas uma vez e aproveite o acesso ilimitado a todos os doramas, sem surpresas de mensalidades. Acesso vitalício para maratonar sem limites!
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Guarantee Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1432] to-[#0f0a1f]">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-gradient-to-r from-pink-600/20 to-purple-600/20 rounded-3xl p-8 md:p-12 border-2 border-pink-500/30 text-center">
+            <div className="flex justify-center mb-6">
+              <div className="w-24 h-24 bg-pink-500/20 rounded-full flex items-center justify-center border-2 border-pink-500">
+                <svg className="w-12 h-12 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Garantia de 7 Dias</h2>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
+              Experimente o DoramaPlay sem riscos! Se não ficar satisfeito, devolvemos 100% do seu dinheiro em até 7 dias. Simples assim!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0f0a1f] to-[#1a1432]">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">O que nossos clientes estão dizendo</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-[#1e1538] rounded-2xl overflow-hidden shadow-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
+              <img src="/testimonial-1.jpeg" alt="Depoimento 1" className="w-full h-auto" />
+            </div>
+            
+            <div className="bg-[#1e1538] rounded-2xl overflow-hidden shadow-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
+              <img src="/testimonial-2.jpeg" alt="Depoimento 2" className="w-full h-auto" />
+            </div>
+            
+            <div className="bg-[#1e1538] rounded-2xl overflow-hidden shadow-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
+              <img src="/testimonial-3.jpeg" alt="Depoimento 3" className="w-full h-auto" />
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+              className="block w-full max-w-md bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
+            >
+              GARANTIR ACESSO
+            </button>
           </div>
         </div>
       </section>
