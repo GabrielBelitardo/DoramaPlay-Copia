@@ -234,7 +234,7 @@ export default function DoramaPass() {
             </h1>
 
             <p className="text-center text-pink-300 text-xl md:text-2xl lg:text-3xl mb-16 max-w-4xl font-semibold">
-              Pagamento único de R$12,90
+              OFERTA IMPERDÍVEL
             </p>
 
             <div className="flex justify-center mb-12 w-full">
