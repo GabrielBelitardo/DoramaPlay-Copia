@@ -397,7 +397,8 @@ export default function DoramaPass() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Escolha o melhor plano para você</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">🎬 Plano Completo DoramaPlay</h2>
+          <p className="text-center text-gray-300 text-xl mb-12">Acesso total ao catálogo por apenas R$12,90</p>
 
           <div className="flex justify-center max-w-2xl mx-auto">
             <div className="w-full bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)]">
@@ -525,6 +526,8 @@ export default function DoramaPass() {
               >
                 ASSINAR PLANO VITALÍCIO
               </a>
+              
+              <p className="text-center text-gray-400 text-sm mt-4">🛡 Garantia de 7 dias</p>
             </div>
           </div>
         </div>
