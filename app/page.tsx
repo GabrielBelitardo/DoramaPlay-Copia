@@ -329,7 +329,7 @@ export default function DoramaPass() {
               <div className="mb-8">
                 <img src="/streaming-apps.jpeg" alt="Apps de Streaming" className="w-full h-auto rounded-xl shadow-lg" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Tudo em um só lugar</h3>
+              <h3 className="text-2xl font-bold mb-4">Todos os benefícios do Básico</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
                 Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet. A diversão não tem limites!
               </p>
@@ -422,10 +422,10 @@ export default function DoramaPass() {
                   <span className="text-3xl font-bold text-red-500 line-through">R$ 34,90</span>
                 </div>
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-white">R$ 24,90</span>
+                  <span className="text-5xl font-bold text-white">R$ 12,90</span>
                 </div>
                 <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
-                  Economize 83%
+                  Economize 63%
                 </div>
               </div>
 
@@ -438,7 +438,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Todos os benefícios do Básico</span>
+                  <span className="text-white">Todos os doramas mais famosos inclusos!</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -530,49 +530,44 @@ export default function DoramaPass() {
         </div>
       </section>
 
-      {/* Guarantee Section */}
+      {/* Como Funciona Section */}
       <section className="py-16 px-4 bg-[#0a0618]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-8 bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-3xl p-12 border border-purple-500/20">
-            {/* Garantia de 30 Dias */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="bg-pink-500/20 p-3 rounded-xl">
-                  <svg className="w-10 h-10 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-3xl font-bold">Garantia de 30 Dias</h3>
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Como funciona?</h2>
+          
+          <div className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-3xl p-8 md:p-12 border border-purple-500/20">
+            <div className="space-y-6 mb-8">
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">1️⃣</span>
+                <p className="text-white text-lg pt-1">Você realiza o pagamento único de R$12,90</p>
               </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                Se você não ficar 100% satisfaita com o acesso, devolvemos seu dinheiro integralmente em até 30 dias
-                após a compra.
-              </p>
+              
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">2️⃣</span>
+                <p className="text-white text-lg pt-1">Recebe acesso imediato à plataforma</p>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">3️⃣</span>
+                <p className="text-white text-lg pt-1">Pode assistir no celular, TV ou computador</p>
+              </div>
             </div>
 
-            {/* Sem perguntas */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="bg-pink-500/20 p-3 rounded-xl">
-                  <svg className="w-10 h-10 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-3xl font-bold">Sem perguntas</h3>
+            <div className="border-t border-purple-500/30 pt-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Pagamento 100% seguro</p>
               </div>
-              <p className="text-gray-300 leading-relaxed text-lg">
-                Sua satisfação ou seu dinheiro de volta. Simples assim.
-              </p>
+              
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Pix e cartão</p>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Acesso imediato</p>
+              </div>
             </div>
           </div>
         </div>
