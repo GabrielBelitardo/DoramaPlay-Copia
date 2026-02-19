@@ -391,7 +391,8 @@ export default function DoramaPass() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Escolha o melhor plano para você</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">Escolha o melhor plano para você</h2>
+          <p className="text-center text-2xl md:text-3xl font-bold text-pink-500 mb-12">PROMOÇÃO DO MÊS</p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Plano Básico */}
@@ -400,7 +401,10 @@ export default function DoramaPass() {
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
-                  <span className="text-5xl font-bold text-white">R$12,90</span>
+                  <span className="text-2xl font-bold text-red-500 line-through">R$12,90</span>
+                </div>
+                <div>
+                  <span className="text-5xl font-bold text-white">R$9,97</span>
                 </div>
               </div>
 
@@ -413,7 +417,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">+10.000 minisséries e doramas</span>
+                  <span className="text-white">300 minisséries e doramas apenas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -458,8 +462,11 @@ export default function DoramaPass() {
               <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
 
               <div className="mb-6 text-center">
+                <div className="mb-2">
+                  <span className="text-2xl font-bold text-red-500 line-through">R$24,90</span>
+                </div>
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-white">R$ 24,90</span>
+                  <span className="text-5xl font-bold text-white">R$19,90</span>
                 </div>
                 <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
                   Economize 83%
