@@ -326,9 +326,6 @@ export default function DoramaPass() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Combined Feature: Assista + Baixe */}
             <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer">
-              <div className="mb-8">
-                <img src="/streaming-apps.jpeg" alt="Apps de Streaming" className="w-full h-auto rounded-xl shadow-lg" />
-              </div>
               <h3 className="text-2xl font-bold mb-4">Todos os benefícios do Básico</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
                 Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet. A diversão não tem limites!
@@ -337,9 +334,6 @@ export default function DoramaPass() {
 
             {/* Pagamento Único Card */}
             <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer flex flex-col justify-center">
-              <div className="mb-8">
-                <img src="/phone-dublado-legendado.png" alt="Phone Mockup" className="w-full h-auto rounded-lg shadow-lg" />
-              </div>
               <h3 className="text-2xl font-bold mb-4">Pagamento Único, Sem Mensalidades</h3>
               <p className="text-gray-400 leading-relaxed text-sm">
                 Pague apenas uma vez e aproveite o acesso ilimitado a todos os doramas, sem surpresas de mensalidades. Acesso vitalício para maratonar sem limites!
@@ -397,36 +391,16 @@ export default function DoramaPass() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">🎬 Plano Completo DoramaPlay</h2>
-          <p className="text-center text-gray-300 text-xl mb-12">Acesso total ao catálogo por apenas R$12,90</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Escolha o melhor plano para você</h2>
 
-          <div className="flex justify-center max-w-2xl mx-auto">
-            <div className="w-full bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)]">
-              <div className="absolute -top-4 -right-4">
-                <div className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/50 uppercase">
-                  OFERTA IMPERDÍVEL
-                </div>
-              </div>
-
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
-
-              <div className="mb-6 flex justify-center">
-                <img 
-                  src="/doramas-promo.jpg" 
-                  alt="Doramas e Mini Séries" 
-                  className="w-64 h-64 object-cover rounded-xl shadow-lg"
-                />
-              </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Plano Básico */}
+            <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
+              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
-                  <span className="text-3xl font-bold text-red-500 line-through">R$ 34,90</span>
-                </div>
-                <div className="mb-3">
-                  <span className="text-5xl font-bold text-white">R$ 12,90</span>
-                </div>
-                <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
-                  Economize 63%
+                  <span className="text-5xl font-bold text-white">R$12,90</span>
                 </div>
               </div>
 
@@ -439,7 +413,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Todos os doramas mais famosos inclusos!</span>
+                  <span className="text-white">+10.000 minisséries e doramas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -450,7 +424,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Acesso prioritário a novidades</span>
+                  <span className="text-white">Todos os episódios liberados</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -461,7 +435,47 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Suporte premium 24/7</span>
+                  <span className="text-white">Assista em qualquer dispositivo</span>
+                </div>
+              </div>
+
+              <a
+                href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
+                className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30"
+              >
+                ASSINAR AGORA
+              </a>
+            </div>
+
+            {/* Plano Premium */}
+            <div className="bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)] order-1 md:order-2">
+              <div className="absolute -top-4 -right-4">
+                <div className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/50 uppercase">
+                  MELHOR OFERTA
+                </div>
+              </div>
+
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
+
+              <div className="mb-6 text-center">
+                <div className="mb-3">
+                  <span className="text-5xl font-bold text-white">R$ 24,90</span>
+                </div>
+                <div className="inline-block bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/40 uppercase">
+                  Economize 83%
+                </div>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-white">Acesso a mais de 10mil minisséries e doramas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -472,7 +486,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Acesso imediato via WhatsApp e e-mail</span>
+                  <span className="text-white">Todos os episódios liberados dos melhores apps</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -483,7 +497,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Download para assistir offline</span>
+                  <span className="text-white">Acesso em qualquer dispositivo</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -494,7 +508,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Até 4 telas simultâneas</span>
+                  <span className="text-white">Lançamentos diários automáticos</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -505,7 +519,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Acesso vitalício</span>
+                  <span className="text-white">Suporte VIP 24h</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -516,7 +530,18 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Pagamento único</span>
+                  <span className="text-white">Acesso vitalício garantido</span>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-white">Garantia de 7 dias</span>
                 </div>
               </div>
 
@@ -526,8 +551,6 @@ export default function DoramaPass() {
               >
                 ASSINAR PLANO VITALÍCIO
               </a>
-              
-              <p className="text-center text-gray-400 text-sm mt-4">🛡 Garantia de 7 dias</p>
             </div>
           </div>
         </div>
