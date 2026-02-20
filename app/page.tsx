@@ -159,9 +159,9 @@ export default function DoramaPass() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-pink-100 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0618] to-[#1a0b2e]">
       {/* Fixed Header */}
-      <header className="border-b border-purple-200 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-pink-50/95">
+      <header className="border-b border-white/10 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95">
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between md:justify-center relative">
             {/* Mobile Menu Button */}
@@ -169,9 +169,9 @@ export default function DoramaPass() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden flex flex-col gap-1.5"
             >
-              <div className={`w-6 h-0.5 bg-purple-600 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-purple-600 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-purple-600 transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
             </button>
 
             {/* Logo - Centered on all screens */}
@@ -230,10 +230,10 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-4">
-              <span className="text-black neon-text-title"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
+              <span className="text-white"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
             </h1>
 
-            <p className="text-center text-black text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
+            <p className="text-center text-pink-300 text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
               Tenha acesso imediato a uma biblioteca completa de doramas apaixonantes, com atualização constante e qualidade premium por apenas R$9,97!
             </p>
 
@@ -268,7 +268,7 @@ export default function DoramaPass() {
             <div className="flex justify-center mt-8 w-full">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                className="w-full max-w-2xl neon-button text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl text-center uppercase"
+                className="w-full max-w-2xl bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-2xl"
               >
                 GARANTIR ACESSO AGORA
               </button>
@@ -391,20 +391,20 @@ export default function DoramaPass() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3 text-purple-900">Escolha o melhor plano para você</h2>
-          <p className="text-center text-2xl md:text-3xl font-bold text-pink-600 neon-text mb-12">PROMOÇÃO DO MÊS</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">Escolha o melhor plano para você</h2>
+          <p className="text-center text-2xl md:text-3xl font-bold text-pink-500 mb-12">PROMOÇÃO DO MÊS</p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Plano Básico */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-purple-300 transition-all duration-500 hover:border-purple-500 order-2 md:order-1 shadow-xl">
-              <h3 className="text-3xl font-bold mb-6 text-purple-900 text-center">Plano Básico</h3>
+            <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
+              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
                   <span className="text-2xl font-bold text-red-600 line-through">R$12,90</span>
                 </div>
                 <div>
-                  <span className="text-5xl font-bold text-black">R$9,97</span>
+                  <span className="text-5xl font-bold text-white">R$9,97</span>
                 </div>
               </div>
 
@@ -417,7 +417,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-black font-medium">300 minisséries e doramas apenas</span>
+                  <span className="text-white">300 minisséries e doramas apenas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -452,21 +452,21 @@ export default function DoramaPass() {
             </div>
 
             {/* Plano Premium */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-purple-500 relative transition-all duration-500 hover:border-purple-600 order-1 md:order-2 shadow-2xl">
+            <div className="bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)] order-1 md:order-2">
               <div className="absolute -top-4 -right-4">
-                <div className="bg-purple-600 text-white px-6 py-2 rounded-full font-bold text-sm neon-button uppercase">
+                <div className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/50 uppercase">
                   MELHOR OFERTA
                 </div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-purple-900 text-center">Plano Premium</h3>
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
                   <span className="text-2xl font-bold text-red-600 line-through">R$24,90</span>
                 </div>
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-black">R$19,90</span>
+                  <span className="text-5xl font-bold text-white">R$19,90</span>
                 </div>
                 <div className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full font-bold text-sm neon-button uppercase">
                   Economize 63%
