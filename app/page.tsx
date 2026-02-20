@@ -278,12 +278,12 @@ export default function DoramaPass() {
       </section>
 
       {/* Carousel Section - +1000 doramas */}
-      <section className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50 overflow-hidden relative">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0a0618] to-[#1a0b2e] overflow-hidden relative">
         <div className="container mx-auto max-w-6xl px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight">
-            <span className="text-purple-900">+1000 </span>
-            <span className="text-pink-600 neon-text">doramas e minisséries</span>
-            <span className="text-purple-900"> dubladas</span>
+            <span className="text-white">+1000 </span>
+            <span className="text-pink-500">doramas e minisséries</span>
+            <span className="text-white"> dubladas</span>
           </h2>
 
           <div className="mb-8 group">
@@ -564,42 +564,42 @@ export default function DoramaPass() {
       </section>
 
       {/* Como Funciona Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-pink-50 to-pink-100">
+      <section className="py-16 px-4 bg-[#0a0618]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-purple-900">Como funciona?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Como funciona?</h2>
           
-          <div className="bg-white rounded-3xl p-8 md:p-12 border-2 border-purple-300 shadow-xl">
+          <div className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-3xl p-8 md:p-12 border border-purple-500/20">
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
                 <span className="text-3xl">1️⃣</span>
-                <p className="text-gray-800 text-lg pt-1 font-medium">Você realiza o pagamento único de R$9,97</p>
+                <p className="text-white text-lg pt-1">Você realiza o pagamento único de R$9,97</p>
               </div>
               
               <div className="flex items-start gap-4">
                 <span className="text-3xl">2️⃣</span>
-                <p className="text-gray-800 text-lg pt-1 font-medium">Recebe acesso imediato à plataforma</p>
+                <p className="text-white text-lg pt-1">Recebe acesso imediato à plataforma</p>
               </div>
               
               <div className="flex items-start gap-4">
                 <span className="text-3xl">3️⃣</span>
-                <p className="text-gray-800 text-lg pt-1 font-medium">Pode assistir no celular, TV ou computador</p>
+                <p className="text-white text-lg pt-1">Pode assistir no celular, TV ou computador</p>
               </div>
             </div>
 
-            <div className="border-t border-purple-200 pt-6 space-y-3">
+            <div className="border-t border-purple-500/30 pt-6 space-y-3">
               <div className="flex items-center gap-3">
-                <span className="text-2xl text-purple-600">✔</span>
-                <p className="text-gray-700 text-lg font-medium">Pagamento 100% seguro</p>
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Pagamento 100% seguro</p>
               </div>
               
               <div className="flex items-center gap-3">
-                <span className="text-2xl text-purple-600">✔</span>
-                <p className="text-gray-700 text-lg font-medium">Pix e cartão</p>
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Pix e cartão</p>
               </div>
               
               <div className="flex items-center gap-3">
-                <span className="text-2xl text-purple-600">✔</span>
-                <p className="text-gray-700 text-lg font-medium">Acesso imediato</p>
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Acesso imediato</p>
               </div>
             </div>
           </div>
