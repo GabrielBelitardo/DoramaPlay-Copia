@@ -230,10 +230,10 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-4">
-              <span className="text-gray-900 neon-text-title"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
+              <span className="text-black neon-text-title"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
             </h1>
 
-            <p className="text-center text-gray-800 text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
+            <p className="text-center text-black text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
               Tenha acesso imediato a uma biblioteca completa de doramas apaixonantes, com atualização constante e qualidade premium por apenas R$9,97!
             </p>
 
@@ -404,7 +404,7 @@ export default function DoramaPass() {
                   <span className="text-2xl font-bold text-red-600 line-through">R$12,90</span>
                 </div>
                 <div>
-                  <span className="text-5xl font-bold text-gray-900">R$9,97</span>
+                  <span className="text-5xl font-bold text-black">R$9,97</span>
                 </div>
               </div>
 
@@ -417,7 +417,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">300 minisséries e doramas apenas</span>
+                  <span className="text-black font-medium">300 minisséries e doramas apenas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -466,7 +466,7 @@ export default function DoramaPass() {
                   <span className="text-2xl font-bold text-red-600 line-through">R$24,90</span>
                 </div>
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-gray-900">R$19,90</span>
+                  <span className="text-5xl font-bold text-black">R$19,90</span>
                 </div>
                 <div className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full font-bold text-sm neon-button uppercase">
                   Economize 63%
