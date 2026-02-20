@@ -233,3 +233,32 @@
     animation: testimonial-scroll 7s linear infinite;
   }
 }
+
+/* Neon text effects */
+.neon-text {
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.8),
+               0 0 20px rgba(168, 85, 247, 0.6),
+               0 0 30px rgba(236, 72, 153, 0.4);
+}
+
+.neon-text-title {
+  text-shadow: 0 0 15px rgba(236, 72, 153, 0.6),
+               0 0 30px rgba(168, 85, 247, 0.4);
+}
+
+/* Purple neon button styles */
+.neon-button {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6),
+              0 0 40px rgba(168, 85, 247, 0.4),
+              0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  background: linear-gradient(135deg, #6d28d9 0%, #9333ea 100%);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.8),
+              0 0 60px rgba(168, 85, 247, 0.6),
+              0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
