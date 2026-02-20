@@ -175,8 +175,8 @@ export default function DoramaPass() {
             </button>
 
             {/* Logo - Centered on all screens */}
-            <a href="/" className="text-xl md:text-2xl font-bold absolute md:static left-1/2 md:left-auto transform -translate-x-1/2 md:transform-none neon-text">
-              <span className="text-pink-400">KDrama</span><span className="text-purple-400">Universe</span>
+            <a href="/" className="text-xl md:text-2xl font-bold absolute md:static left-1/2 md:left-auto transform -translate-x-1/2 md:transform-none">
+              <span className="text-pink-500">KDrama</span><span className="text-purple-600">Universe</span>
             </a>
 
             {/* Desktop Menu */}
@@ -389,7 +389,7 @@ export default function DoramaPass() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50">
+      <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-[#0a0618] to-[#1a0b2e]">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">Escolha o melhor plano para você</h2>
           <p className="text-center text-2xl md:text-3xl font-bold text-pink-500 mb-12">PROMOÇÃO DO MÊS</p>
@@ -445,9 +445,9 @@ export default function DoramaPass() {
 
               <a
                 href="https://doramapremium.mycartpanda.com/checkout/205314747:1"
-                className="block w-full neon-button text-white font-bold py-4 text-lg rounded-xl text-center uppercase"
+                className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30 animate-pulse-glow"
               >
-                ASSINAR AGORA
+                Quero Meu Acesso Agora
               </a>
             </div>
 
@@ -554,9 +554,9 @@ export default function DoramaPass() {
 
               <a
                 href="https://doramapremium.mycartpanda.com/checkout/205314748:1"
-                className="block w-full neon-button text-white font-bold py-4 text-lg rounded-xl text-center uppercase"
+                className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 text-lg rounded-xl transition-all duration-300 text-center uppercase shadow-lg shadow-pink-500/30 animate-pulse-glow"
               >
-                ASSINAR PLANO VITALÍCIO
+                Liberar Meu Acesso Premium
               </a>
             </div>
           </div>
