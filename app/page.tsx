@@ -288,12 +288,13 @@ export default function DoramaPass() {
 
           <div className="mb-8 group">
             <div className="flex gap-4 animate-scroll-right group-hover:pause-animation">
-              {[...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
+              {[...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src={poster || "/placeholder.svg"}
+                    src={poster}
                     alt={`Drama ${(index % dramaPostersRow1.length) + 1}`}
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                 </div>
               ))}
@@ -302,12 +303,13 @@ export default function DoramaPass() {
 
           <div className="group">
             <div className="flex gap-4 animate-scroll-left group-hover:pause-animation">
-              {[...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
+              {[...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
                 <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src={poster || "/placeholder.svg"}
+                    src={poster}
                     alt={`Drama ${(index % dramaPostersRow2.length) + 1}`}
                     className="w-full h-full object-cover"
+                    loading="eager"
                   />
                 </div>
               ))}
