@@ -159,9 +159,9 @@ export default function DoramaPass() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-pink-100 to-pink-50">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0618] to-[#1a0b2e]">
       {/* Fixed Header */}
-      <header className="border-b border-purple-200 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-pink-50/95">
+      <header className="border-b border-white/10 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 bg-[#1a0b2e]/95">
         <div className="container mx-auto px-4 py-2">
           <div className="flex items-center justify-between md:justify-center relative">
             {/* Mobile Menu Button */}
@@ -169,9 +169,9 @@ export default function DoramaPass() {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden flex flex-col gap-1.5"
             >
-              <div className={`w-6 h-0.5 bg-purple-600 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-purple-600 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
-              <div className={`w-6 h-0.5 bg-purple-600 transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? 'opacity-0' : ''}`}></div>
+              <div className={`w-6 h-0.5 bg-pink-500 transition-all ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></div>
             </button>
 
             {/* Logo - Centered on all screens */}
@@ -230,10 +230,10 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-4">
-              <span className="text-gray-900 neon-text-title"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
+              <span className="text-white"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
             </h1>
 
-            <p className="text-center text-gray-800 text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
+            <p className="text-center text-pink-300 text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
               Tenha acesso imediato a uma biblioteca completa de doramas apaixonantes, com atualização constante e qualidade premium por apenas R$9,97!
             </p>
 
@@ -268,7 +268,7 @@ export default function DoramaPass() {
             <div className="flex justify-center mt-8 w-full">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                className="w-full max-w-2xl neon-button text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl text-center uppercase"
+                className="w-full max-w-2xl bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-6 px-8 text-xl md:text-2xl rounded-2xl transition-all duration-300 text-center uppercase animate-pulse-glow shadow-2xl"
               >
                 GARANTIR ACESSO AGORA
               </button>
@@ -278,12 +278,12 @@ export default function DoramaPass() {
       </section>
 
       {/* Carousel Section - +1000 doramas */}
-      <section className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50 overflow-hidden relative">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0a0618] to-[#1a0b2e] overflow-hidden relative">
         <div className="container mx-auto max-w-6xl px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 leading-tight">
-            <span className="text-purple-900">+1000 </span>
-            <span className="text-pink-600 neon-text">doramas e minisséries</span>
-            <span className="text-purple-900"> dubladas</span>
+            <span className="text-white">+1000 </span>
+            <span className="text-pink-500">doramas e minisséries</span>
+            <span className="text-white"> dubladas</span>
           </h2>
 
           <div className="mb-8 group">
@@ -319,23 +319,23 @@ export default function DoramaPass() {
 
 
       {/* Features Section - O que voce vai receber */}
-      <section className="py-20 px-4 bg-gradient-to-b from-pink-50 to-pink-100">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1432] to-[#0f0a1f]">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 text-purple-900">O que você vai receber?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">O que você vai receber?</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Combined Feature: Assista + Baixe */}
-            <div className="group text-center bg-white rounded-3xl p-8 border-2 border-purple-200 hover:border-purple-500 transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-purple-900">Todos os benefícios do Básico</h3>
-              <p className="text-gray-700 leading-relaxed text-sm">
+            <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer">
+              <h3 className="text-2xl font-bold mb-4">Todos os benefícios do Básico</h3>
+              <p className="text-gray-400 leading-relaxed text-sm">
                 Com nosso aplicativo, você pode curtir seus doramas favoritos na TV, celular, tablet ou computador. Salve seus títulos favoritos e sempre tenha algo para assistir, mesmo sem internet. A diversão não tem limites!
               </p>
             </div>
 
             {/* Pagamento Único Card */}
-            <div className="group text-center bg-white rounded-3xl p-8 border-2 border-purple-200 hover:border-purple-500 transition-all duration-300 hover:scale-105 cursor-pointer flex flex-col justify-center shadow-lg">
-              <h3 className="text-2xl font-bold mb-4 text-purple-900">Pagamento Único, Sem Mensalidades</h3>
-              <p className="text-gray-700 leading-relaxed text-sm">
+            <div className="group text-center bg-[#1e1538] rounded-3xl p-8 border-2 border-transparent hover:border-pink-500 transition-all duration-300 hover:scale-105 cursor-pointer flex flex-col justify-center">
+              <h3 className="text-2xl font-bold mb-4">Pagamento Único, Sem Mensalidades</h3>
+              <p className="text-gray-400 leading-relaxed text-sm">
                 Pague apenas uma vez e aproveite o acesso ilimitado a todos os doramas, sem surpresas de mensalidades. Acesso vitalício para maratonar sem limites!
               </p>
             </div>
@@ -344,14 +344,14 @@ export default function DoramaPass() {
       </section>
 
       {/* Guarantee Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1432] to-[#0f0a1f]">
         <div className="container mx-auto max-w-4xl">
-          <div className="bg-white rounded-3xl p-8 md:p-12 border-2 border-purple-300 text-center shadow-xl">
+          <div className="bg-gradient-to-r from-pink-600/20 to-purple-600/20 rounded-3xl p-8 md:p-12 border-2 border-pink-500/30 text-center">
             <div className="flex justify-center mb-6">
               <img src="/garantia-7-dias.png" alt="Garantia 7 Dias" className="w-32 h-32 md:w-40 md:h-40" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-purple-900">Garantia de 7 Dias</h2>
-            <p className="text-gray-700 text-lg leading-relaxed max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Garantia de 7 Dias</h2>
+            <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
               Experimente o KDrama Universe sem riscos! Se não ficar satisfeito, devolvemos 100% do seu dinheiro em até 7 dias. Simples assim!
             </p>
           </div>
@@ -359,12 +359,12 @@ export default function DoramaPass() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-pink-50 to-pink-100">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0f0a1f] to-[#1a1432]">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-purple-900">O que nossos clientes estão dizendo</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">O que nossos clientes estão dizendo</h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl border border-purple-200 hover:border-purple-500 transition-all duration-300">
+            <div className="bg-[#1e1538] rounded-2xl overflow-hidden shadow-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all duration-300">
               <img src="/testimonial-1.jpeg" alt="Depoimento 1" className="w-full h-auto" />
             </div>
             
@@ -391,55 +391,55 @@ export default function DoramaPass() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3 text-purple-900">Escolha o melhor plano para você</h2>
-          <p className="text-center text-2xl md:text-3xl font-bold text-pink-600 neon-text mb-12">PROMOÇÃO DO MÊS</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">Escolha o melhor plano para você</h2>
+          <p className="text-center text-2xl md:text-3xl font-bold text-pink-500 mb-12">PROMOÇÃO DO MÊS</p>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Plano Básico */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-purple-300 transition-all duration-500 hover:border-purple-500 order-2 md:order-1 shadow-xl">
-              <h3 className="text-3xl font-bold mb-6 text-purple-900 text-center">Plano Básico</h3>
+            <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
+              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
                   <span className="text-2xl font-bold text-red-600 line-through">R$12,90</span>
                 </div>
                 <div>
-                  <span className="text-5xl font-bold text-gray-900">R$9,97</span>
+                  <span className="text-5xl font-bold text-white">R$9,97</span>
                 </div>
               </div>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">300 minisséries e doramas apenas</span>
+                  <span className="text-white">300 minisséries e doramas apenas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Todos os episódios liberados</span>
+                  <span className="text-white">Todos os episódios liberados</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Assista em qualquer dispositivo</span>
+                  <span className="text-white">Assista em qualquer dispositivo</span>
                 </div>
               </div>
 
@@ -452,21 +452,21 @@ export default function DoramaPass() {
             </div>
 
             {/* Plano Premium */}
-            <div className="bg-white rounded-3xl p-8 border-2 border-purple-500 relative transition-all duration-500 hover:border-purple-600 order-1 md:order-2 shadow-2xl">
+            <div className="bg-[#3d1f2e] rounded-3xl p-8 border-2 border-pink-500 relative transition-all duration-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)] order-1 md:order-2">
               <div className="absolute -top-4 -right-4">
-                <div className="bg-purple-600 text-white px-6 py-2 rounded-full font-bold text-sm neon-button uppercase">
+                <div className="bg-pink-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-pink-500/50 uppercase">
                   MELHOR OFERTA
                 </div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-purple-900 text-center">Plano Premium</h3>
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
                   <span className="text-2xl font-bold text-red-600 line-through">R$24,90</span>
                 </div>
                 <div className="mb-3">
-                  <span className="text-5xl font-bold text-gray-900">R$19,90</span>
+                  <span className="text-5xl font-bold text-white">R$19,90</span>
                 </div>
                 <div className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full font-bold text-sm neon-button uppercase">
                   Economize 63%
@@ -475,80 +475,80 @@ export default function DoramaPass() {
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Acesso a mais de 10mil minisséries e doramas</span>
+                  <span className="text-white">Acesso a mais de 10mil minisséries e doramas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Todos os episódios liberados dos melhores apps</span>
+                  <span className="text-white">Todos os episódios liberados dos melhores apps</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Acesso em qualquer dispositivo</span>
+                  <span className="text-white">Acesso em qualquer dispositivo</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Lançamentos diários automáticos</span>
+                  <span className="text-white">Lançamentos diários automáticos</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Suporte VIP 24h</span>
+                  <span className="text-white">Suporte VIP 24h</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Acesso vitalício garantido</span>
+                  <span className="text-white">Acesso vitalício garantido</span>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <svg className="w-6 h-6 text-purple-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-6 h-6 text-pink-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-800 font-medium">Garantia de 7 dias</span>
+                  <span className="text-white">Garantia de 7 dias</span>
                 </div>
               </div>
 
@@ -564,42 +564,42 @@ export default function DoramaPass() {
       </section>
 
       {/* Como Funciona Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-pink-50 to-pink-100">
+      <section className="py-16 px-4 bg-[#0a0618]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-purple-900">Como funciona?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">Como funciona?</h2>
           
-          <div className="bg-white rounded-3xl p-8 md:p-12 border-2 border-purple-300 shadow-xl">
+          <div className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-3xl p-8 md:p-12 border border-purple-500/20">
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4">
                 <span className="text-3xl">1️⃣</span>
-                <p className="text-gray-800 text-lg pt-1 font-medium">Você realiza o pagamento único de R$9,97</p>
+                <p className="text-white text-lg pt-1">Você realiza o pagamento único de R$9,97</p>
               </div>
               
               <div className="flex items-start gap-4">
                 <span className="text-3xl">2️⃣</span>
-                <p className="text-gray-800 text-lg pt-1 font-medium">Recebe acesso imediato à plataforma</p>
+                <p className="text-white text-lg pt-1">Recebe acesso imediato à plataforma</p>
               </div>
               
               <div className="flex items-start gap-4">
                 <span className="text-3xl">3️⃣</span>
-                <p className="text-gray-800 text-lg pt-1 font-medium">Pode assistir no celular, TV ou computador</p>
+                <p className="text-white text-lg pt-1">Pode assistir no celular, TV ou computador</p>
               </div>
             </div>
 
-            <div className="border-t border-purple-200 pt-6 space-y-3">
+            <div className="border-t border-purple-500/30 pt-6 space-y-3">
               <div className="flex items-center gap-3">
-                <span className="text-2xl text-purple-600">✔</span>
-                <p className="text-gray-700 text-lg font-medium">Pagamento 100% seguro</p>
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Pagamento 100% seguro</p>
               </div>
               
               <div className="flex items-center gap-3">
-                <span className="text-2xl text-purple-600">✔</span>
-                <p className="text-gray-700 text-lg font-medium">Pix e cartão</p>
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Pix e cartão</p>
               </div>
               
               <div className="flex items-center gap-3">
-                <span className="text-2xl text-purple-600">✔</span>
-                <p className="text-gray-700 text-lg font-medium">Acesso imediato</p>
+                <span className="text-2xl">✔</span>
+                <p className="text-gray-300 text-lg">Acesso imediato</p>
               </div>
             </div>
           </div>
