@@ -143,6 +143,16 @@ export default function DoramaPass() {
     "/drama-8.webp",
     "/drama-9.jpeg",
     "/drama-10.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OB3RnMf-6Gnbau4QvD4IokQPQmCmDyL8YHewhF.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/xdFbFH5-PoLVTJJiGkuyiMhR5OqYG9nBumAl60.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/B18HjPu-0KjCrV7G2K5LUPTLrpeDtfGHTfWdXq.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abnK1wP-HNfXF1Hz1LZzLQ65Sa5aTM1nQquGJH.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kQtv5S2-CKQxiEXC0mKFy8xROUFrwjvrLpLc1O.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/r4VtSiGDlV3ElFRFQP358bABUWE-TxjrLmRlL6uL897Vi7koZ4jIe0wjTi.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/b31c077133f333f2d1e308d89b391021-1-0ev4LocAaovzCGfokVmwVG1V6fqOEs.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eebdcb3ea04903b08c26d291c5d28c80-MJ8FDB4xmYa8Dqw9a0xPtEFo6gTHXN.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/c7cc6483fc90a1eff87e4bcb0c86032f-hFBss2FO4hMN1STDi1X2SLE0ooqMIm.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e90c9a700e971a869a6259094015e05d-6orEiAYH98oCKOZ7lWjJ62csJUizi8.webp",
   ]
 
   const dramaPostersRow2 = [
@@ -156,6 +166,16 @@ export default function DoramaPass() {
     "/drama-3.webp",
     "/drama-4.webp",
     "/drama-5.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/c7cc6483fc90a1eff87e4bcb0c86032f-hFBss2FO4hMN1STDi1X2SLE0ooqMIm.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e90c9a700e971a869a6259094015e05d-6orEiAYH98oCKOZ7lWjJ62csJUizi8.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/OB3RnMf-6Gnbau4QvD4IokQPQmCmDyL8YHewhF.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/xdFbFH5-PoLVTJJiGkuyiMhR5OqYG9nBumAl60.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/B18HjPu-0KjCrV7G2K5LUPTLrpeDtfGHTfWdXq.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abnK1wP-HNfXF1Hz1LZzLQ65Sa5aTM1nQquGJH.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kQtv5S2-CKQxiEXC0mKFy8xROUFrwjvrLpLc1O.jpeg",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/r4VtSiGDlV3ElFRFQP358bABUWE-TxjrLmRlL6uL897Vi7koZ4jIe0wjTi.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/b31c077133f333f2d1e308d89b391021-1-0ev4LocAaovzCGfokVmwVG1V6fqOEs.webp",
+    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eebdcb3ea04903b08c26d291c5d28c80-MJ8FDB4xmYa8Dqw9a0xPtEFo6gTHXN.webp",
   ]
 
   return (
