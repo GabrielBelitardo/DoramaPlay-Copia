@@ -419,7 +419,7 @@ export default function DoramaPass() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Plano Básico */}
             <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
-              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
+              <h3 className="text-3xl font-bold mb-6 text-white text-center">Plano Básico</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
@@ -439,7 +439,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">300 minisséries e doramas apenas</span>
+                  <span className="text-white">50 minisséries e doramas apenas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -481,7 +481,7 @@ export default function DoramaPass() {
                 </div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-white text-center">Plano Premium</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
