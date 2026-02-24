@@ -504,7 +504,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">Acesso Ilimitado a todas as Minisséries e doramas</span>
+                  <span className="text-white">Acesso a mais de 10mil minisséries e doramas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
