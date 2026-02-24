@@ -250,7 +250,7 @@ export default function DoramaPass() {
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="flex flex-col items-center justify-center text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight px-4">
-              <span className="text-white"><span className="text-pink-500">KDrama</span> <span className="text-purple-600">Universe</span> – O Maior Universo de Doramas em um Só Lugar</span>
+              <span className="text-white">O Maior Universo de Doramas em um Só Lugar</span>
             </h1>
 
             <p className="text-center text-pink-300 text-lg md:text-xl lg:text-2xl mb-16 max-w-4xl font-semibold px-4">
@@ -419,7 +419,7 @@ export default function DoramaPass() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Plano Básico */}
             <div className="bg-[#0a0a0a] rounded-3xl p-8 border-2 border-pink-500/60 transition-all duration-500 hover:border-pink-500 order-2 md:order-1">
-              <h3 className="text-3xl font-bold mb-6 text-pink-500 text-center">Plano Básico</h3>
+              <h3 className="text-3xl font-bold mb-6 text-white text-center">Plano Básico</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
@@ -439,7 +439,7 @@ export default function DoramaPass() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-white">300 minisséries e doramas apenas</span>
+                  <span className="text-white">50 minisséries e doramas apenas</span>
                 </div>
 
                 <div className="flex items-start gap-3">
@@ -481,7 +481,7 @@ export default function DoramaPass() {
                 </div>
               </div>
 
-              <h3 className="text-3xl font-bold mb-6 mt-4 text-pink-500 text-center">Plano Premium</h3>
+              <h3 className="text-3xl font-bold mb-6 mt-4 text-white text-center">Plano Premium</h3>
 
               <div className="mb-6 text-center">
                 <div className="mb-2">
