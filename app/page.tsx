@@ -306,10 +306,10 @@ export default function DoramaPass() {
             <span className="text-white"> dubladas</span>
           </h2>
 
-          <div className="mb-8 group">
-            <div className="flex gap-4 animate-scroll-right group-hover:pause-animation">
-              {[...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
-                <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="mb-8 overflow-hidden">
+            <div className="flex gap-4 animate-scroll-right" style={{ width: "max-content" }}>
+              {[...dramaPostersRow1, ...dramaPostersRow1].map((poster, index) => (
+                <div key={index} className="flex-shrink-0 w-36 md:w-48 h-56 md:h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={poster}
                     alt={`Drama ${(index % dramaPostersRow1.length) + 1}`}
@@ -321,10 +321,10 @@ export default function DoramaPass() {
             </div>
           </div>
 
-          <div className="group">
-            <div className="flex gap-4 animate-scroll-left group-hover:pause-animation">
-              {[...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
-                <div key={index} className="flex-shrink-0 w-48 h-72 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="overflow-hidden">
+            <div className="flex gap-4 animate-scroll-left" style={{ width: "max-content" }}>
+              {[...dramaPostersRow2, ...dramaPostersRow2].map((poster, index) => (
+                <div key={index} className="flex-shrink-0 w-36 md:w-48 h-56 md:h-72 rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src={poster}
                     alt={`Drama ${(index % dramaPostersRow2.length) + 1}`}

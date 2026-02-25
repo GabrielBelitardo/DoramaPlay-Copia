@@ -165,11 +165,13 @@
 }
 
 .animate-scroll-right {
-  animation: scroll-right 40s linear infinite;
+  animation: scroll-right 35s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-left {
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 35s linear infinite;
+  will-change: transform;
 }
 
 .pause-animation {
@@ -224,10 +226,10 @@
 
 @media (max-width: 768px) {
   .animate-scroll-right {
-    animation: scroll-right 40s linear infinite;
+    animation: scroll-right 25s linear infinite;
   }
   .animate-scroll-left {
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 25s linear infinite;
   }
   .animate-testimonial-scroll {
     animation: testimonial-scroll 7s linear infinite;
