@@ -1,7 +1,26 @@
 "use client"
-import { Monitor, Download, DollarSign, Play, Smartphone, Tablet, ChevronLeft, ChevronRight } from "lucide-react"
+import { Play, ChevronDown } from "lucide-react"
 import { useState, useEffect } from "react"
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@radix-ui/react-accordion"
+
+function FaqItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="text-lg font-bold px-6 py-5 hover:bg-white/5 transition-colors w-full flex justify-between items-center"
+      >
+        <span className="text-left text-white">{question}</span>
+        <ChevronDown className={`w-5 h-5 text-pink-400 shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
+          {answer}
+        </div>
+      )}
+    </div>
+  )
+}
 
 export default function DoramaPass() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -203,16 +222,16 @@ export default function DoramaPass() {
             <div className="hidden md:absolute md:right-0 md:flex items-center gap-4 md:gap-6">
               <button
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-                className="text-purple-700 hover:text-purple-900 transition-colors text-sm md:text-base font-bold"
+                className="text-pink-300 hover:text-white transition-colors text-sm md:text-base font-bold"
               >
                 Planos
               </button>
-              <a
-                href="/oferta"
+              <button
+                onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
                 className="neon-button text-white px-4 md:px-6 py-2 rounded-full text-sm md:text-base font-bold"
               >
                 Oferta Especial
-              </a>
+              </button>
             </div>
           </div>
 
@@ -224,17 +243,19 @@ export default function DoramaPass() {
                   document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
                   setMobileMenuOpen(false)
                 }}
-                className="text-purple-700 hover:text-purple-900 transition-colors text-sm font-bold py-2"
+                className="text-pink-300 hover:text-white transition-colors text-sm font-bold py-2"
               >
                 Planos
               </button>
-              <a
-                href="/oferta"
-                onClick={() => setMobileMenuOpen(false)}
+              <button
+                onClick={() => {
+                  document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
+                  setMobileMenuOpen(false)
+                }}
                 className="neon-button text-white px-4 py-2 rounded-full text-sm font-bold text-center"
               >
                 Oferta Especial
-              </a>
+              </button>
             </div>
           )}
         </div>
@@ -314,7 +335,8 @@ export default function DoramaPass() {
                     src={poster}
                     alt={`Drama ${(index % dramaPostersRow1.length) + 1}`}
                     className="w-full h-full object-cover"
-                    loading="eager"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               ))}
@@ -329,7 +351,8 @@ export default function DoramaPass() {
                     src={poster}
                     alt={`Drama ${(index % dramaPostersRow2.length) + 1}`}
                     className="w-full h-full object-cover"
-                    loading="eager"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               ))}
@@ -629,197 +652,23 @@ export default function DoramaPass() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-pink-100 to-pink-50">
+      <section className="py-20 px-4 bg-gradient-to-b from-[#0a0618] to-[#1a0b2e]">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-purple-900">Perguntas Frequentes</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">Perguntas Frequentes</h2>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem
-              value="item-1"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">Tem doramas dublados?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transition-transform duration-300 shrink-0"
-                >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                Sim! Todos os doramas estão disponíveis com opção de áudio dublado em português, opção legendado também
-                está disponível.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-2"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">Como faço pra assinar?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transition-transform duration-300 shrink-0"
-                >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                É só clicar no botão acima, fazer o pagamento e receber seu link de acesso diretamente no E-mail.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-3"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">É mesmo vitalício?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transition-transform duration-300 shrink-0"
-                >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                Sim! No Plano Premium, você paga uma vez e tem acesso pra sempre — sem mensalidades, sem renovação.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-4"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">Tem todos os doramas dos apps mesmo?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="transition-transform duration-300 shrink-0"
-                >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                Sim! Temos um acervo com +1000 minisséries e doramas dos principais aplicativos, e todos os dias
-                adicionamos lançamentos.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-5"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">Em quanto tempo recebo o acesso?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                O acesso e o link de download do APP são enviados automaticamente após o pagamento para o e-mail
-                cadastrado na hora da compra.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-6"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">Posso assistir na TV?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
-                  <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9" />
-                  <path d="M12 3v6" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                Sim! Funciona em Smart TVs, Chromecast, Fire Stick, e até espelhando pelo celular.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem
-              value="item-7"
-              className="bg-gradient-to-br from-[#3d2463] to-[#2d1a4a] rounded-2xl border border-purple-500/20 overflow-hidden"
-            >
-              <AccordionTrigger className="text-xl font-bold px-6 py-5 hover:no-underline hover:bg-white/5 transition-colors w-full flex justify-between items-center [&[data-state=open]>svg]:rotate-180">
-                <span className="text-left">Preciso pagar mensalidade depois?</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
-                  <path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9" />
-                  <path d="M12 3v6" />
-                </svg>
-              </AccordionTrigger>
-              <AccordionContent className="px-6 pb-5 text-gray-300 leading-relaxed text-base">
-                Não! É pagamento único. Sem taxas escondidas ou cobranças futuras.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+          <div className="space-y-4">
+            {[
+              { q: "Tem doramas dublados?", a: "Sim! Todos os doramas estão disponíveis com opção de áudio dublado em português, opção legendado também está disponível." },
+              { q: "Como faço pra assinar?", a: "É só clicar no botão acima, fazer o pagamento e receber seu link de acesso diretamente no E-mail." },
+              { q: "É mesmo vitalício?", a: "Sim! No Plano Premium, você paga uma vez e tem acesso pra sempre — sem mensalidades, sem renovação." },
+              { q: "Tem todos os doramas dos apps mesmo?", a: "Sim! Temos um acervo com +1000 minisséries e doramas dos principais aplicativos, e todos os dias adicionamos lançamentos." },
+              { q: "Em quanto tempo recebo o acesso?", a: "O acesso e o link de download do APP são enviados automaticamente após o pagamento para o e-mail cadastrado na hora da compra." },
+              { q: "Posso assistir na TV?", a: "Sim! Funciona em Smart TVs, Chromecast, Fire Stick, e até espelhando pelo celular." },
+              { q: "Preciso pagar mensalidade depois?", a: "Não! É pagamento único. Sem taxas escondidas ou cobranças futuras." },
+            ].map((item, i) => (
+              <FaqItem key={i} question={item.q} answer={item.a} />
+            ))}
+          </div>
         </div>
       </section>
 
